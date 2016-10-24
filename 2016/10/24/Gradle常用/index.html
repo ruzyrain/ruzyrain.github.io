@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="环境搭建," />
+  <meta name="keywords" content="构建工具," />
 
 
 
@@ -86,31 +86,19 @@
 
 
 
-<meta name="description" content="1. node.js安装安装 Node.js 的最佳方式是使用 nvm。
-cURL:
-$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-Wget:
-$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
-安装完成后，重启终端">
+<meta name="description" content="##1. 自定义Gradle打包方式
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657apply plugin: &amp;apos;java&amp;apos;sourceCompatibility = 1.7targetCompatibility =">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Hexo+GitHub Pages 搭建博客">
-<meta property="og:url" content="http://yoursite.com/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/index.html">
+<meta property="og:title" content="使用Gradle管理与构建">
+<meta property="og:url" content="http://yoursite.com/2016/10/24/Gradle常用/index.html">
 <meta property="og:site_name" content="每日一更">
-<meta property="og:description" content="1. node.js安装安装 Node.js 的最佳方式是使用 nvm。
-cURL:
-$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-Wget:
-$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
-安装完成后，重启终端">
-<meta property="og:updated_time" content="2016-10-24T08:44:37.000Z">
+<meta property="og:description" content="##1. 自定义Gradle打包方式
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657apply plugin: &amp;apos;java&amp;apos;sourceCompatibility = 1.7targetCompatibility =">
+<meta property="og:updated_time" content="2016-10-24T09:05:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Hexo+GitHub Pages 搭建博客">
-<meta name="twitter:description" content="1. node.js安装安装 Node.js 的最佳方式是使用 nvm。
-cURL:
-$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-Wget:
-$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
-安装完成后，重启终端">
+<meta name="twitter:title" content="使用Gradle管理与构建">
+<meta name="twitter:description" content="##1. 自定义Gradle打包方式
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657apply plugin: &amp;apos;java&amp;apos;sourceCompatibility = 1.7targetCompatibility =">
 
 
 
@@ -131,10 +119,10 @@ $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/24/Gradle常用/"/>
 
 
-  <title> 使用Hexo+GitHub Pages 搭建博客 | 每日一更 </title>
+  <title> 使用Gradle管理与构建 | 每日一更 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -287,7 +275,7 @@ $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
             
             
               
-                使用Hexo+GitHub Pages 搭建博客
+                使用Gradle管理与构建
               
             
           </h1>
@@ -310,8 +298,8 @@ $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/" itemprop="commentsCount"></span>
+                <a href="/2016/10/24/Gradle常用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/24/Gradle常用/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -321,7 +309,7 @@ $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 
           
           
-             <span id="/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/" class="leancloud_visitors" data-flag-title="使用Hexo+GitHub Pages 搭建博客">
+             <span id="/2016/10/24/Gradle常用/" class="leancloud_visitors" data-flag-title="使用Gradle管理与构建">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -343,75 +331,13 @@ $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
       
 
       
-        <h2 id="1-node-js安装"><a href="#1-node-js安装" class="headerlink" title="1. node.js安装"></a>1. node.js安装</h2><p>安装 Node.js 的最佳方式是使用 nvm。</p>
-<p>cURL:</p>
-<p><code>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</code></p>
-<p>Wget:</p>
-<p><code>$ wget -qO- <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh</code></p>
-<p>安装完成后，重启终端并执行下列命令即可安装 Node.js。</p>
-<p><code>$ nvm install stable</code></p>
-<hr>
+        <p>##1. 自定义Gradle打包方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line">apply plugin: &apos;java&apos;</div><div class="line"></div><div class="line">sourceCompatibility = 1.7</div><div class="line">targetCompatibility = 1.7</div><div class="line"></div><div class="line">version = &apos;1.0&apos;</div><div class="line"></div><div class="line">repositories &#123;</div><div class="line">    mavenCentral()</div><div class="line">    mavenLocal()</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">dependencies &#123;</div><div class="line">    //json 及相关依赖</div><div class="line">    compile(&apos;net.sf.json-lib:json-lib:2.4:jdk15@jar&apos;)</div><div class="line">    compile(&apos;commons-beanutils:commons-beanutils:1.8.0&apos;)</div><div class="line">    compile(&apos;commons-collections:commons-collections:3.2.1&apos;)</div><div class="line">    compile(&apos;commons-lang:commons-lang:2.5&apos;)</div><div class="line">    compile(&apos;commons-logging:commons-logging:1.1.1&apos;)</div><div class="line">    compile(&apos;net.sf.ezmorph:ezmorph:1.0.6&apos;)</div><div class="line">//    testCompile group: &apos;junit&apos;, name: &apos;junit&apos;, version: &apos;4.11&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">task taskJar(type:Jar, dependsOn: compileJava) &#123;</div><div class="line">    from &apos;build/classes&apos;</div><div class="line">    destinationDir = file(&apos;build/libs&apos;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">task clearPj(type:Delete)&#123;</div><div class="line">    delete &apos;build&apos;,&apos;target&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">task release(type: Copy,dependsOn: [clearPj,taskJar]) &#123;</div><div class="line">    from(&apos;build/libs&apos;) &#123;</div><div class="line">        include &apos;*.jar&apos;</div><div class="line">    &#125;</div><div class="line">    into (&apos;target&apos;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">jar &#123;</div><div class="line"></div><div class="line">    manifest &#123;</div><div class="line">        attributes (&apos;Main-Class&apos;: &apos; wsn.um.common.Main&apos;)</div><div class="line"></div><div class="line">    &#125;</div><div class="line">    baseName = &quot;wsn.um.open_jdk1.7&quot;</div><div class="line">    version = &quot;0.0.1&quot;</div><div class="line"></div><div class="line">    from &#123;</div><div class="line">        configurations.compile.collect &#123;</div><div class="line">            it.isDirectory() ? it : zipTree(it)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    exclude &apos;META-INF/*.RSA&apos;, &apos;META-INF/*.SF&apos;,&apos;META-INF/*.DSA&apos;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="2-Hexo安装"><a href="#2-Hexo安装" class="headerlink" title="2. Hexo安装"></a>2. Hexo安装</h2><p>Node和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。</p>
-<p>执行如下命令安装Hexo：</p>
-<p><code>sudo npm install -g hexo</code></p>
-<p>初始化然后，执行init命令初始化hexo,命令：</p>
-<p><code>hexo init</code></p>
-<p>好啦，至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
-<p>生成静态页面</p>
-<p><code>hexo generate（hexo g也可以）</code></p>
-<p>本地启动</p>
-<p>启动本地服务，进行文章预览调试，命令：</p>
-<p><code>hexo server</code></p>
-<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
-<hr>
-<p>建立Repository</p>
-<p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法</p>
-<p>然后建立关联，我的blog在本地/Users/leopard/blog，blog是我之前建的东西也全在这里面，有：</p>
-<pre><code>_config.yml    node_modules    public      source
-
-db.json        package.json    scaffolds  themes
-</code></pre><p>现在我们需要_config.yml文件，来建立关联，命令：</p>
-<p><code>vim _config.yml</code></p>
-<p>翻到最下面，改成我这样子的</p>
-<pre><code>deploy:
-
-     type: git
-
-     repo: https://github.com/leopardpan/leopardpan.github.io.git
-
-     branch: master
-</code></pre><p>然后执行命令：</p>
-<p><code>npm install hexo-deployer-git --save</code></p>
-<p>然后，执行配置命令：</p>
-<p><code>hexo deploy</code></p>
-<p>然后再浏览器中输入<a href="http://leopardpan.github.io/就行了，我的github的账户叫leopardpan,把这个改成你github的账户名就行了" target="_blank" rel="external">http://leopardpan.github.io/就行了，我的github的账户叫leopardpan,把这个改成你github的账户名就行了</a></p>
-<p>部署步骤</p>
-<p>每次部署的步骤，可按以下三步来进行。</p>
-<pre><code>hexo clean
-
-hexo generate
-
-hexo deploy
-</code></pre><p>一些常用命令：</p>
-<pre><code>hexo new&quot;postName&quot; #新建文章
-
-hexo new page&quot;pageName&quot; #新建页面
-
-hexo generate #生成静态页面至public目录
-
-hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
-
-hexo deploy #将.deploy目录部署到GitHub
-
-hexo help # 查看帮助
-
-hexo version #查看Hexo的版本
-</code></pre><h2 id="3-主题及插件安装"><a href="#3-主题及插件安装" class="headerlink" title="3.主题及插件安装"></a>3.主题及插件安装</h2><p>使用next主题，详细配置：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
-<p>去掉底部Power By Hexo/由 Hexo 强力驱动<br>准备工具<br>Hexo<br>一个主题 (我使用的是 Hacker )<br>Editer (我使用的是 VS Code )<br>步骤<br>用文本编辑器打开 Hexo 所在的目录<br>打开 themes 目录<br>打开你想要编辑的主题所在的目录中的 layout 目录<br>打开 layout 目录下的 _partial 目录<br>打开 _partial 目录下的 footer.ejs 文件<br>将下面这段代码修改成你想要的<br><code>Powered by &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;
-Theme by &lt;a href=&quot;https://github.com/CodeDaraW/Hacker&quot; target=&quot;_blank&quot;&gt;Hacker&lt;/a&gt;
-Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&quot;&gt;itdevwu&lt;/a&gt;</code></p>
-<p>和平时一样 Save，然后 Deploy<br>查看你的 Hexo 首页，发现已经将“ Powered By ” 改成你想要的了</p>
+<p>##2. Gradle中获取当前时间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">jar &#123;</div><div class="line">    baseName = &apos;HairDressing&apos;</div><div class="line">    version  = releaseTime()</div><div class="line">&#125;</div><div class="line"></div><div class="line">def releaseTime() &#123;</div><div class="line">    return new Date().format(&quot;yyyy-MM-dd_HH-mm-ss&quot;, TimeZone.getTimeZone(&quot;UTC&quot;))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>##3. SpringBoot gradle</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div></pre></td><td class="code"><pre><div class="line">buildscript &#123;</div><div class="line">    repositories &#123;</div><div class="line">        mavenLocal()</div><div class="line">        mavenCentral()</div><div class="line">        maven &#123; url &quot;http://repo.spring.io/snapshot&quot; &#125;</div><div class="line">        maven &#123; url &quot;http://repo.spring.io/milestone&quot; &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    dependencies &#123;</div><div class="line">        classpath(&quot;org.springframework.boot:spring-boot-gradle-plugin:1.4.0.BUILD-SNAPSHOT&quot;)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">apply plugin: &apos;java&apos;</div><div class="line">apply plugin: &apos;spring-boot&apos;</div><div class="line">//apply plugin: &apos;war&apos;</div><div class="line"></div><div class="line">repositories &#123;</div><div class="line">    mavenLocal()</div><div class="line">    mavenCentral()</div><div class="line">    maven &#123; url &quot;http://repo.spring.io/snapshot&quot; &#125;</div><div class="line">    maven &#123; url &quot;http://repo.spring.io/milestone&quot; &#125;</div><div class="line">    maven &#123;</div><div class="line">        url  &quot;http://jcenter.bintray.com&quot;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">jar &#123;</div><div class="line">    baseName = &apos;HairDressing&apos;</div><div class="line">    version  = releaseTime()</div><div class="line">&#125;</div><div class="line"></div><div class="line">dependencies &#123;</div><div class="line"></div><div class="line">    //spring-boot ref</div><div class="line">    compile(&quot;org.springframework.boot:spring-boot-starter-web:1.4.0.BUILD-SNAPSHOT&quot;)</div><div class="line">    compile(&quot;org.springframework.boot:spring-boot-starter-data-jpa:1.4.0.BUILD-SNAPSHOT&quot;)</div><div class="line"></div><div class="line">    //mysql ref</div><div class="line">    compile(&quot;mysql:mysql-connector-java:5.1.35&quot;)</div><div class="line"></div><div class="line">    //json ref</div><div class="line">    compile(&apos;net.sf.json-lib:json-lib:2.4:jdk15@jar&apos;)</div><div class="line">    compile(&apos;commons-beanutils:commons-beanutils:1.8.0&apos;)</div><div class="line">    compile(&apos;commons-collections:commons-collections:3.2.1&apos;)</div><div class="line">    compile(&apos;commons-lang:commons-lang:2.5&apos;)</div><div class="line">    compile(&apos;commons-logging:commons-logging:1.1.1&apos;)</div><div class="line">    compile(&apos;net.sf.ezmorph:ezmorph:1.0.6&apos;)</div><div class="line"></div><div class="line">    //geometry</div><div class="line">    compile(&apos;com.vividsolutions:jts:1.13&apos;)</div><div class="line"></div><div class="line">    //freemarker ref</div><div class="line">    compile(&apos;org.springframework.boot:spring-boot-starter-freemarker:1.4.0.BUILD-SNAPSHOT&apos;)</div><div class="line"></div><div class="line">    //jdom</div><div class="line">    compile(&apos;jdom:jdom:1.0&apos;)</div><div class="line"></div><div class="line">    //ping++</div><div class="line">    compile &apos;Pingplusplus:pingpp-java:2.0.7&apos;</div><div class="line"></div><div class="line">    //json</div><div class="line">    compile(&apos;org.json:org.json:chargebee-1.0&apos;)</div><div class="line"></div><div class="line">//    testCompile(&quot;org.springframework.boot:spring-boot-starter-test&quot;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">task wrapper(type: Wrapper)&#123;</div><div class="line">    gradleVersion = &apos;2.2.1&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">def releaseTime() &#123;</div><div class="line">    return new Date().format(&quot;yyyy-MM-dd_HH-mm-ss&quot;, TimeZone.getTimeZone(&quot;UTC&quot;))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -455,7 +381,7 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
       
         <div class="post-tags">
           
-            <a href="/tags/环境搭建/" rel="tag">#环境搭建</a>
+            <a href="/tags/构建工具/" rel="tag">#构建工具</a>
           
         </div>
       
@@ -464,13 +390,17 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/24/Gradle常用/" rel="next" title="使用Gradle管理与构建">
-                <i class="fa fa-chevron-left"></i> 使用Gradle管理与构建
+              <a href="/2016/10/24/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/" rel="prev" title="使用Hexo+GitHub Pages 搭建博客">
+                使用Hexo+GitHub Pages 搭建博客 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -485,10 +415,10 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/"
-     data-title="使用Hexo+GitHub Pages 搭建博客"
+        <div class="ds-share flat" data-thread-key="2016/10/24/Gradle常用/"
+     data-title="使用Gradle管理与构建"
      data-content=""
-     data-url="http://yoursite.com/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/">
+     data-url="http://yoursite.com/2016/10/24/Gradle常用/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -518,8 +448,8 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/"
-           data-title="使用Hexo+GitHub Pages 搭建博客" data-url="http://yoursite.com/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/">
+      <div class="ds-thread" data-thread-key="2016/10/24/Gradle常用/"
+           data-title="使用Gradle管理与构建" data-url="http://yoursite.com/2016/10/24/Gradle常用/">
       </div>
     
   </div>
@@ -639,7 +569,7 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-node-js安装"><span class="nav-number">1.</span> <span class="nav-text">1. node.js安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo安装"><span class="nav-number">2.</span> <span class="nav-text">2. Hexo安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-主题及插件安装"><span class="nav-number">3.</span> <span class="nav-text">3.主题及插件安装</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
