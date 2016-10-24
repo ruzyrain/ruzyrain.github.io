@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Mark Down</title>
+  <title>每日一更</title>
   <subtitle>Keep Fighting</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-24T05:50:21.000Z</updated>
+  <updated>2016-10-24T07:59:58.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Hexo+GitHub Pages 搭建博客</title>
+    <link href="http://yoursite.com/2016/10/24/%E4%BD%BF%E7%94%A8Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA%E9%9D%99%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/</id>
+    <published>2016-10-24T06:54:01.000Z</published>
+    <updated>2016-10-24T07:59:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-node-js安装"><a href="#1-node-js安装" class="headerlink" title="1. node.js安装"></a>1. node.js安装</h2><p>安装 Node.js 的最佳方式是使用 nvm。</p>
+<p>cURL:</p>
+<p><code>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</code></p>
+<p>Wget:</p>
+<p><code>$ wget -qO- <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh</code></p>
+<p>安装完成后，重启终端并执行下列命令即可安装 Node.js。</p>
+<p><code>$ nvm install stable</code></p>
+<hr>
+<a id="more"></a>
+<h2 id="2-Hexo安装"><a href="#2-Hexo安装" class="headerlink" title="2. Hexo安装"></a>2. Hexo安装</h2><p>Node和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。</p>
+<p>执行如下命令安装Hexo：</p>
+<p><code>sudo npm install -g hexo</code></p>
+<p>初始化然后，执行init命令初始化hexo,命令：</p>
+<p><code>hexo init</code></p>
+<p>好啦，至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
+<p>生成静态页面</p>
+<p><code>hexo generate（hexo g也可以）</code></p>
+<p>本地启动</p>
+<p>启动本地服务，进行文章预览调试，命令：</p>
+<p><code>hexo server</code></p>
+<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<hr>
+<p>建立Repository</p>
+<p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法</p>
+<p>然后建立关联，我的blog在本地/Users/leopard/blog，blog是我之前建的东西也全在这里面，有：</p>
+<pre><code>_config.yml    node_modules    public      source
+
+db.json        package.json    scaffolds  themes
+</code></pre><p>现在我们需要_config.yml文件，来建立关联，命令：</p>
+<p><code>vim _config.yml</code></p>
+<p>翻到最下面，改成我这样子的</p>
+<pre><code>deploy:
+
+     type: git
+
+     repo: https://github.com/leopardpan/leopardpan.github.io.git
+
+     branch: master
+</code></pre><p>然后执行命令：</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>然后，执行配置命令：</p>
+<p><code>hexo deploy</code></p>
+<p>然后再浏览器中输入<a href="http://leopardpan.github.io/就行了，我的github的账户叫leopardpan,把这个改成你github的账户名就行了" target="_blank" rel="external">http://leopardpan.github.io/就行了，我的github的账户叫leopardpan,把这个改成你github的账户名就行了</a></p>
+<p>部署步骤</p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<pre><code>hexo clean
+
+hexo generate
+
+hexo deploy
+</code></pre><p>一些常用命令：</p>
+<pre><code>hexo new&quot;postName&quot; #新建文章
+
+hexo new page&quot;pageName&quot; #新建页面
+
+hexo generate #生成静态页面至public目录
+
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+
+hexo deploy #将.deploy目录部署到GitHub
+
+hexo help # 查看帮助
+
+hexo version #查看Hexo的版本
+</code></pre><h2 id="3-主题及插件安装"><a href="#3-主题及插件安装" class="headerlink" title="3.主题及插件安装"></a>3.主题及插件安装</h2><p>使用next主题，详细配置：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-node-js安装&quot;&gt;&lt;a href=&quot;#1-node-js安装&quot; class=&quot;headerlink&quot; title=&quot;1. node.js安装&quot;&gt;&lt;/a&gt;1. node.js安装&lt;/h2&gt;&lt;p&gt;安装 Node.js 的最佳方式是使用 nvm。&lt;/p&gt;
+&lt;p&gt;cURL:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Wget:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ wget -qO- &lt;a href=&quot;https://raw.github.com/creationix/nvm/master/install.sh&quot;&gt;https://raw.github.com/creationix/nvm/master/install.sh&lt;/a&gt; | sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后，重启终端并执行下列命令即可安装 Node.js。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ nvm install stable&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="环境搭建" scheme="http://yoursite.com/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
