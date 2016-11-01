@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-27T07:33:57.000Z</updated>
+  <updated>2016-11-01T06:40:10.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个沉浸式设计网站</title>
+    <link href="http://yoursite.com/2016/11/01/%E4%B8%80%E4%B8%AA%E6%B2%89%E6%B5%B8%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/"/>
+    <id>http://yoursite.com/2016/11/01/一个沉浸式设计网站/</id>
+    <published>2016-11-01T06:39:21.000Z</published>
+    <updated>2016-11-01T06:40:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x8BBE;&#x8BA1;&#x5F88;&#x68D2;&#x7684;&#x7F51;&#x7AD9;&#xFF0C;Mark&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p><a href="https://www.ifly50.com/" target="_blank" rel="external">https://www.ifly50.com/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x53D1;&amp;#x73B0;&amp;#x4E00;&amp;#x4E2A;&amp;#x8BBE;&amp;#x8BA1;&amp;#x5F88;&amp;#x68D2;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#xFF0C;Mark&amp;#x4E00;&amp;#x4E0B;&amp;#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;a hr
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="http://yoursite.com/tags/%E6%9D%82%E9%A1%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA开发书籍推荐</title>
