@@ -4,9 +4,9 @@
   <subtitle>Keep Fighting</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.taoye.bid/"/>
   <updated>2016-11-22T07:50:14.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.taoye.bid/</id>
   
   <author>
     <name>Tao Ye</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hybrid模式框架推荐</title>
-    <link href="http://yoursite.com/2016/11/22/Hybrid%E6%A8%A1%E5%BC%8F%E6%A1%86%E6%9E%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>http://yoursite.com/2016/11/22/Hybrid模式框架推荐/</id>
+    <link href="http://blog.taoye.bid/2016/11/22/Hybrid%E6%A8%A1%E5%BC%8F%E6%A1%86%E6%9E%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://blog.taoye.bid/2016/11/22/Hybrid模式框架推荐/</id>
     <published>2016-11-22T06:14:11.000Z</published>
     <updated>2016-11-22T07:50:14.000Z</updated>
     
@@ -79,14 +79,14 @@
     </summary>
     
     
-      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://blog.taoye.bid/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>nginx配置详解</title>
-    <link href="http://yoursite.com/2016/11/21/nginx%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://yoursite.com/2016/11/21/nginx配置详解/</id>
+    <link href="http://blog.taoye.bid/2016/11/21/nginx%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://blog.taoye.bid/2016/11/21/nginx配置详解/</id>
     <published>2016-11-21T07:16:43.000Z</published>
     <updated>2016-11-22T07:50:11.000Z</updated>
     
@@ -257,14 +257,14 @@ http {
     </summary>
     
     
-      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
+      <category term="配置" scheme="http://blog.taoye.bid/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>Paxos算法解析</title>
-    <link href="http://yoursite.com/2016/11/03/Paxos%E7%AE%97%E6%B3%95%E8%A7%A3%E6%9E%90/"/>
-    <id>http://yoursite.com/2016/11/03/Paxos算法解析/</id>
+    <link href="http://blog.taoye.bid/2016/11/03/Paxos%E7%AE%97%E6%B3%95%E8%A7%A3%E6%9E%90/"/>
+    <id>http://blog.taoye.bid/2016/11/03/Paxos算法解析/</id>
     <published>2016-11-03T08:16:43.000Z</published>
     <updated>2016-11-22T07:50:02.000Z</updated>
     
@@ -341,14 +341,14 @@ http {
     </summary>
     
     
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://blog.taoye.bid/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>一个沉浸式设计网站</title>
-    <link href="http://yoursite.com/2016/11/01/%E4%B8%80%E4%B8%AA%E6%B2%89%E6%B5%B8%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/"/>
-    <id>http://yoursite.com/2016/11/01/一个沉浸式设计网站/</id>
+    <link href="http://blog.taoye.bid/2016/11/01/%E4%B8%80%E4%B8%AA%E6%B2%89%E6%B5%B8%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/"/>
+    <id>http://blog.taoye.bid/2016/11/01/一个沉浸式设计网站/</id>
     <published>2016-11-01T06:39:21.000Z</published>
     <updated>2016-11-22T07:49:52.000Z</updated>
     
@@ -365,14 +365,14 @@ http {
     </summary>
     
     
-      <category term="杂项" scheme="http://yoursite.com/tags/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="http://blog.taoye.bid/tags/%E6%9D%82%E9%A1%B9/"/>
     
   </entry>
   
   <entry>
     <title>JAVA开发书籍推荐</title>
-    <link href="http://yoursite.com/2016/10/27/JAVA%E5%BC%80%E5%8F%91%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/"/>
-    <id>http://yoursite.com/2016/10/27/JAVA开发书籍推荐/</id>
+    <link href="http://blog.taoye.bid/2016/10/27/JAVA%E5%BC%80%E5%8F%91%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/"/>
+    <id>http://blog.taoye.bid/2016/10/27/JAVA开发书籍推荐/</id>
     <published>2016-10-27T07:25:07.000Z</published>
     <updated>2016-11-22T07:49:48.000Z</updated>
     
@@ -429,14 +429,14 @@ http {
     </summary>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://blog.taoye.bid/tags/JAVA/"/>
     
   </entry>
   
   <entry>
     <title>都是北京球迷</title>
-    <link href="http://yoursite.com/2016/10/25/%E9%83%BD%E6%98%AF%E5%8C%97%E4%BA%AC%E7%90%83%E8%BF%B7/"/>
-    <id>http://yoursite.com/2016/10/25/都是北京球迷/</id>
+    <link href="http://blog.taoye.bid/2016/10/25/%E9%83%BD%E6%98%AF%E5%8C%97%E4%BA%AC%E7%90%83%E8%BF%B7/"/>
+    <id>http://blog.taoye.bid/2016/10/25/都是北京球迷/</id>
     <published>2016-10-25T09:08:17.000Z</published>
     <updated>2016-11-22T07:49:45.000Z</updated>
     
@@ -452,14 +452,14 @@ http {
     </summary>
     
     
-      <category term="杂项" scheme="http://yoursite.com/tags/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="http://blog.taoye.bid/tags/%E6%9D%82%E9%A1%B9/"/>
     
   </entry>
   
   <entry>
     <title>性能优化</title>
-    <link href="http://yoursite.com/2016/10/25/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    <id>http://yoursite.com/2016/10/25/性能优化/</id>
+    <link href="http://blog.taoye.bid/2016/10/25/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    <id>http://blog.taoye.bid/2016/10/25/性能优化/</id>
     <published>2016-10-25T08:32:59.000Z</published>
     <updated>2016-11-22T07:49:43.000Z</updated>
     
@@ -733,14 +733,14 @@ Predicate  Information (identified by operation id):
     </summary>
     
     
-      <category term="性能调优" scheme="http://yoursite.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+      <category term="性能调优" scheme="http://blog.taoye.bid/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
   </entry>
   
   <entry>
     <title>使用Gradle管理与构建</title>
-    <link href="http://yoursite.com/2016/10/24/Gradle%E5%B8%B8%E7%94%A8/"/>
-    <id>http://yoursite.com/2016/10/24/Gradle常用/</id>
+    <link href="http://blog.taoye.bid/2016/10/24/Gradle%E5%B8%B8%E7%94%A8/"/>
+    <id>http://blog.taoye.bid/2016/10/24/Gradle常用/</id>
     <published>2016-10-24T06:54:02.000Z</published>
     <updated>2016-11-22T07:49:40.000Z</updated>
     
@@ -759,14 +759,14 @@ Predicate  Information (identified by operation id):
     </summary>
     
     
-      <category term="构建工具" scheme="http://yoursite.com/tags/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+      <category term="构建工具" scheme="http://blog.taoye.bid/tags/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>使用Hexo+GitHub Pages 搭建博客</title>
-    <link href="http://yoursite.com/2016/10/24/%E4%BD%BF%E7%94%A8Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA%E9%9D%99%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/</id>
+    <link href="http://blog.taoye.bid/2016/10/24/%E4%BD%BF%E7%94%A8Hexo-GitHub-Pages-%E6%90%AD%E5%BB%BA%E9%9D%99%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://blog.taoye.bid/2016/10/24/使用Hexo-GitHub-Pages-搭建静博客/</id>
     <published>2016-10-24T06:54:01.000Z</published>
     <updated>2016-11-22T07:49:37.000Z</updated>
     
@@ -855,14 +855,14 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
     </summary>
     
     
-      <category term="环境搭建" scheme="http://yoursite.com/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="http://blog.taoye.bid/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/10/24/hello-world/"/>
-    <id>http://yoursite.com/2016/10/24/hello-world/</id>
+    <link href="http://blog.taoye.bid/2016/10/24/hello-world/"/>
+    <id>http://blog.taoye.bid/2016/10/24/hello-world/</id>
     <published>2016-10-24T03:04:49.000Z</published>
     <updated>2016-10-25T09:07:15.000Z</updated>
     
@@ -885,7 +885,7 @@ Website of &lt;a href=&quot;https://itdevwu.github.io&quot; target=&quot;_blank&
     </summary>
     
     
-      <category term="杂项" scheme="http://yoursite.com/tags/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="http://blog.taoye.bid/tags/%E6%9D%82%E9%A1%B9/"/>
     
   </entry>
   
