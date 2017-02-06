@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.taoye.bid/"/>
-  <updated>2017-02-06T01:34:50.000Z</updated>
+  <updated>2017-02-06T02:14:52.000Z</updated>
   <id>http://blog.taoye.bid/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSH 取消私钥密码</title>
+    <link href="http://blog.taoye.bid/2017/02/06/SSH-%E5%8F%96%E6%B6%88%E7%A7%81%E9%92%A5%E5%AF%86%E7%A0%81/"/>
+    <id>http://blog.taoye.bid/2017/02/06/SSH-取消私钥密码/</id>
+    <published>2017-02-06T02:13:24.000Z</published>
+    <updated>2017-02-06T02:14:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<ol>
+<li>&#x4F7F;&#x7528;openssl&#x547D;&#x4EE4;&#x53BB;&#x6389;&#x79C1;&#x94A5;&#x7684;&#x5BC6;&#x7801;</li>
+</ol>
+<p><code>openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new</code></p>
+<ol>
+<li>&#x5907;&#x4EFD;&#x65E7;&#x79C1;&#x94A5;</li>
+</ol>
+<p><code>mv ~/.ssh/id_rsa ~/.ssh/id_rsa.backup</code></p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x65B0;&#x79C1;&#x94A5;</li>
+</ol>
+<p><code>mv ~/.ssh/id_rsa_new ~/.ssh/id_rsa</code></p>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x6743;&#x9650;</li>
+</ol>
+<p><code>chmod 600 ~/.ssh/id_rsa</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&amp;#x4F7F;&amp;#x7528;openssl&amp;#x547D;&amp;#x4EE4;&amp;#x53BB;&amp;#x6389;&amp;#x79C1;&amp;#x94A5;&amp;#x7684;&amp;#x5BC6;&amp;#x7801;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;openssl rsa -in
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="http://blog.taoye.bid/tags/%E6%9D%82%E9%A1%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>HTTP2.0</title>

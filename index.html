@@ -281,6 +281,131 @@
             
               
                 
+                <a class="post-title-link" href="/2017/02/06/SSH-取消私钥密码/" itemprop="url">
+                  SSH 取消私钥密码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-06T10:13:24+08:00" content="2017-02-06">
+              2017-02-06
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/02/06/SSH-取消私钥密码/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/06/SSH-取消私钥密码/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/02/06/SSH-取消私钥密码/" class="leancloud_visitors" data-flag-title="SSH 取消私钥密码">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>&#x4F7F;&#x7528;openssl&#x547D;&#x4EE4;&#x53BB;&#x6389;&#x79C1;&#x94A5;&#x7684;&#x5BC6;&#x7801;</li>
+</ol>
+<p><code>openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new</code></p>
+<ol>
+<li>&#x5907;&#x4EFD;&#x65E7;&#x79C1;&#x94A5;</li>
+</ol>
+<p><code>mv ~/.ssh/id_rsa ~/.ssh/id_rsa.backup</code></p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x65B0;&#x79C1;&#x94A5;</li>
+</ol>
+<p><code>mv ~/.ssh/id_rsa_new ~/.ssh/id_rsa</code></p>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x6743;&#x9650;</li>
+</ol>
+<p><code>chmod 600 ~/.ssh/id_rsa</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/02/03/HTTP1-0-HTTP1-1-HTTP2-0/" itemprop="url">
                   HTTP2.0
                 </a>
@@ -1282,119 +1407,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/25/性能优化/" itemprop="url">
-                  性能优化
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-25T16:32:59+08:00" content="2016-10-25">
-              2016-10-25
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/25/性能优化/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/25/性能优化/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/25/性能优化/" class="leancloud_visitors" data-flag-title="性能优化">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><strong>&#x6458;&#x8981;&#xFF1A;</strong>&#x7CFB;&#x7EDF;&#x4F18;&#x5316;&#x4E00;&#x4E2A;&#x65B9;&#x9762;&#x662F;&#x7CFB;&#x7EDF;&#x5316;&#x7684;&#x5BF9;IT&#x7CFB;&#x7EDF;&#x6216;&#x4EA4;&#x6613;&#x94FE;&#x4E0A;&#x7684;&#x6BCF;&#x4E2A;&#x73AF;&#x8282;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x5E76;&#x4F18;&#x5316;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x5BF9;&#x5355;&#x4E00;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x74F6;&#x9888;&#x70B9;&#x5206;&#x6790;&#x548C;&#x8C03;&#x4F18;&#x3002;&#x4F18;&#x5316;&#x7684;&#x76EE;&#x6807;&#x65E0;&#x975E;&#x662F;&#xFF1A;&#x63D0;&#x9AD8;&#x7CFB;&#x7EDF;&#x7684;&#x54CD;&#x5E94;&#x901F;&#x5EA6;&#x3001;&#x541E;&#x5410;&#x91CF;&#x3001;&#x964D;&#x4F4E;&#x5404;&#x5C42;&#x8026;&#x5408;&#xFF0C;&#x4EE5;&#x5E94;&#x5BF9;&#x7075;&#x6D3B;&#x5BF9;&#x8FB9;&#x7684;&#x5E02;&#x573A;&#x3002;</p>
-<hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/25/性能优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1440,7 +1452,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
